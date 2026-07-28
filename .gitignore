@@ -1,0 +1,85 @@
+# ==========================
+# Python
+# ==========================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# Entornos virtuales
+venv/
+env/
+.venv/
+*/venv/
+*/.venv/
+
+# ==========================
+# Variables de entorno / secretos
+# ==========================
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets.yaml
+
+# ==========================
+# Bases de datos locales / volúmenes
+# ==========================
+*.sqlite3
+*.db
+postgres_data/
+
+# ==========================
+# Docker
+# ==========================
+*.log
+
+# ==========================
+# Kubernetes
+# ==========================
+# Kubeconfigs locales (nunca subir credenciales de clústeres reales)
+kubeconfig
+kubeconfig.yaml
+*.kubeconfig
+k8s/**/secrets/
+
+# Charts de Helm empaquetados (se generan, no se versionan)
+*.tgz
+
+# ==========================
+# Editor / IDE
+# ==========================
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# ==========================
+# pyenv (versión de Python del proyecto SÍ se versiona)
+# ==========================
+# .python-version  <-- este NO va acá, se sube al repo a propósito
+
+# ==========================
+# Node (si en algún momento agregás un frontend)
+# ==========================
+node_modules/
+npm-debug.log*
+
+# ==========================
+# Terraform (si sumás IaC más adelante)
+# ==========================
+*.tfstate
+*.tfstate.backup
+.terraform/
